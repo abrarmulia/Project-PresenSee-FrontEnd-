@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { Image } from "react-bootstrap";
-
+import Group91 from './Group 91.png';
 
 function Login() {
   const [Username, setUsername] = useState('');
@@ -22,10 +22,10 @@ function Login() {
       <div>
         {/* Left side - Login Form */}
         <div class="login-form">
-            <div class="logo">
-              <h1>PresenSee</h1>
-            </div>
+          <h2 className="login-h2">PresenSee</h2>
           <form onSubmit={handleSubmit}>
+            <div>
+            </div>
             <div class="form-group"> 
               <label>Username</label>
                 <input
