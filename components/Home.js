@@ -17,15 +17,15 @@ function Home() {
             <div className="stats-container">
                 <div className="stat-card">
                     <div className="stat-title">Total Admin</div>
-                    <div className="stat-value"></div>
+                    <div className="stat-value">1</div>
                 </div>
                 <div className="stat-card">
                     <div className="stat-title">Total Guru</div>
-                    <div className="stat-value"></div>
+                    <div className="stat-value">97</div>
                 </div>
                 <div className="stat-card">
                     <div className="stat-title">Total Siswa</div>
-                    <div className="stat-value"></div>
+                    <div className="stat-value">366</div>
                 </div>
             </div>
 
