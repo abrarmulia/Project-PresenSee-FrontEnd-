@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 // Simple Card component
 const Card = ({ children, className }) => {
   return (
-    <div className={`bg-white rounded-lg shadow-md ${className}`}>
+    <div className={`${className}`}>
       {children}
     </div>
   );
