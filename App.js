@@ -8,6 +8,8 @@ import TeacherList from './components/TeacherList';
 import AttendanceCamera from './components/AttendanceCamera';
 import Reports from './components/Reports';
 import Navbar from './components/Navbar';
+import PresenseeSiswa from './components/PresenseeSiswa';
+import PresenseeGuru from './components/PresenseeGuru';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 
 const PrivateRoute = ({ children }) => {
@@ -21,6 +23,8 @@ function App() {
       <Router>
         <div className="min-h-screen bg-gray-100">
           <Routes>
+            <Route path="/presenseeSiswa" element={<PresenseeSiswa />} />
+            <Route path="/presenseeGuru" element={<PresenseeGuru />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route
