@@ -39,45 +39,45 @@ function AttendanceCamera() {
   };
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex-container">
       {/* Left side - Camera */}
-      <div className="w-1/2 p-6">
-        <div className="bg-white p-4 rounded-lg shadow">
-          <h2 className="text-lg font-semibold mb-4">Live Camera</h2>
-          <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden">
+      <div className="camera-section">
+        <div className="camera-box">
+          <h2 className="camera-title">Live Camera</h2>
+          <div className="video-container">
             <video
               ref={videoRef}
               autoPlay
               playsInline
-              className="w-full h-full object-cover"
+              className="video-feed"
             />
           </div>
         </div>
       </div>
 
       {/* Right side - Attendance Records */}
-      <div className="w-1/2 p-6 space-y-6">
+      <div className="attendance-section">
         {/* Teacher Attendance */}
-        <div className="bg-white p-4 rounded-lg shadow">
-          <h2 className="text-lg font-semibold mb-4">Rekap Absensi Guru</h2>
-          <div className="space-y-2">
+        <div className="attendance-card">
+          <h2 className="attendance-title">Rekap Absensi Guru</h2>
+          <div className="attendance-list">
             {teacherAttendance.map((teacher, index) => (
-              <div key={index} className="flex items-center">
-                <span className="mr-2">{index + 1}.</span>
-                <span className="flex-1">{teacher.name} - {teacher.time}</span>
+              <div key={index} className="attendance-item">
+                <span className="item-number">{index + 1}.</span>
+                <span className="item-number">{teacher.name} - {teacher.time}</span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Student Attendance */}
-        <div className="bg-white p-4 rounded-lg shadow">
-          <h2 className="text-lg font-semibold mb-4">Rekap Absensi Siswa</h2>
-          <div className="space-y-2">
+        <div className="attendance-card">
+          <h2 className="attendance-title">Rekap Absensi Siswa</h2>
+          <div className="attendance-list">
             {studentAttendance.map((student, index) => (
-              <div key={index} className="flex items-center">
-                <span className="mr-2">{index + 1}.</span>
-                <span className="flex-1">{student.name} - {student.time}</span>
+              <div key={index} className="attendance-item">
+                <span className="item-number">{index + 1}.</span>
+                <span className="item-number">{student.name} - {student.time}</span>
               </div>
             ))}
           </div>
