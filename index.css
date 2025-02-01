@@ -260,6 +260,7 @@ body {
   font-size: 14px; 
   background-color: #36674A;
   color: #ffffff;
+  text-align: center;
 }
 
 .overlay.active {
@@ -311,6 +312,14 @@ body {
   background-color: #e5e7eb;
   border-radius: 0.5rem;
   overflow: hidden;
+}s
+
+.video-container-attendance {
+  position: relative;
+  aspect-ratio: 9/16;
+  background-color: #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .video-feed {
@@ -334,6 +343,15 @@ body {
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 70rem;
+}
+
+.attendance-card-attendance {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 20rem;
 }
 
 .attendance-title {
@@ -362,19 +380,27 @@ body {
 }
 
 .attendance-table th {
-  text-align: left;
+  text-align: center;
   padding: 12px;
   border-bottom: 1px solid #e0e0e0;
   color: #666;
   font-weight: 500;
+  max-height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+  overflow-y: auto;
+  border: 1px solid #ddd;
 }
 
 .attendance-table td {
+  text-align: center;
   padding: 12px;
   border-bottom: 1px solid #e0e0e0;
+  max-height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+  overflow-y: auto;
+  border: 1px solid #ddd;
 }
 
 /* absen siswa */
+
 .attendance-table-container {
   max-height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
   overflow-y: auto;
@@ -481,7 +507,6 @@ body {
 .table-container {
   overflow-x: auto;
   padding: 20px;
-  
 }
 
 th, td {
@@ -644,4 +669,50 @@ th {
 #capturedPhoto {
     display: none;
     margin-top: 1rem;
+}
+
+/* PresenseeSiswa */
+.attendance-card-siswa {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 34rem;
+}
+
+.attendance-table-siswa {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table-container-siswa th,
+.attendance-table-container-siswa td {
+  text-align: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+/* absen siswa */
+
+.attendance-table-container-siswa {
+  max-height: 385px; /* Sesuaikan tinggi maksimal sesuai kebutuhan */
+  overflow-y: auto;
+  position: relative;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.attendance-row-siswa td {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-table-container-siswa thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f9fafb;
+  z-index: 1;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
 }
