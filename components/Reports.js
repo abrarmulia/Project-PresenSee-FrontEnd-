@@ -2,6 +2,14 @@
 import { Radius } from 'lucide-react';
 import React, { useState } from 'react';
 
+const Card = ({ children, className }) => {
+  return (
+    <div className={`${className}`}>
+      {children}
+    </div>
+  );
+};
+
 const Reports = () => {
     const [selectedReport, setSelectedReport] = useState('Data Guru');
 
@@ -25,51 +33,156 @@ const Reports = () => {
 
         {selectedReport === 'Data Guru' && (
         <div style={styles.dataSection}>
-            <h3>Data Guru</h3>
-            <table style={styles.table}>
-            <thead>
-                <tr>
+          <Card>
+            <div className="input-guru-card">
+              <div className="input-guru-header">
+                <h3>Data Guru</h3>
+              <table style={styles.table}>
+              <thead>
+                  <tr>
                     <th>No.</th>
                     <th>Nama</th>
                     <th>NIP</th>
                     <th>Jabatan</th>
                     <th>Tanggal</th>
                     <th>Waktu</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
                     <td>1</td>
                     <td>Riyandi Mulyono, S.Pd</td>
                     <td>123456789</td>
                     <td>Guru Olahraga</td>
                     <td>01/01/2025</td>
                     <td>07.13</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>2</td>
                     <td>Agus Satriadi, S.Pd</td>
                     <td>123456789</td>
                     <td>Guru Olahraga</td>
                     <td>01/01/2025</td>
                     <td>07.20</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>3</td>
                     <td>Monika Rianti Yuskar, S.Pd</td>
                     <td>123456789</td>
                     <td>Guru Olahraga</td>
                     <td>01/01/2025</td>
                     <td>07.28</td>
-                </tr>
-            </tbody>
-            </table>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Monika Rianti Yuskar, S.Pd</td>
+                    <td>123456789</td>
+                    <td>Guru Olahraga</td>
+                    <td>01/01/2025</td>
+                    <td>07.28</td>
+                  </tr>
+              </tbody>
+              </table>
+              </div>
+            </div>
+          </Card>
         </div>
         )}
 
       {selectedReport === 'Data Siswa' && (
         <div style={styles.dataSection}>
-          <h3>Data Siswa</h3>
+          <Card>
+            <div className="input-guru-card">
+              <div className="input-guru-header">
+                <h3>Data Siswa</h3>
           <table style={styles.table}>
             <thead>
               <tr>
@@ -108,6 +221,12 @@ const Reports = () => {
               </tr>
             </tbody>
           </table>
+              </div>
+              
+            </div>
+            
+          </Card>
+          
         </div>
       )}
     </div>
