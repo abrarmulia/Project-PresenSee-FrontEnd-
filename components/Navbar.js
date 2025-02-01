@@ -52,7 +52,7 @@ function Navbar() {
                     <Link to="/teachers">Data Guru</Link>
                     <Link to="/students">Data Siswa</Link>
                     <Link to="/Reports">Laporan</Link>
-                    <button onClick={handleLogout} className="logout-btn">Logout</button>
+                    <Link onClick={handleLogout} className="logout-btn">Logout</Link>
                 </div>
                 </div>
             
