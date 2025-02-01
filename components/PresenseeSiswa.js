@@ -66,10 +66,10 @@ function PresenseeSiswa() {
 
       {/* Right side - Student Attendance Records */}
         <div className="attendance-section">
-        <div className="attendance-card">
+        <div className="attendance-card-siswa">
             <h2 className="attendance-title">Rekap Absensi Siswa</h2>
-            <div className="attendance-table-container">
-            <table className="attendance-table">
+            <div className="attendance-table-container-siswa">
+            <table className="attendance-table-siswa">
                 <thead>
                 <tr className="bg-gray-100">
                     <th className="p-3 text-left">No.</th>
@@ -80,8 +80,8 @@ function PresenseeSiswa() {
                 <tbody>
                 {studentAttendance.map((student, index) => (
                     <React.Fragment key={index}>
-                    <tr className="attendance-row">
-                        <td className="p-3">{index + 1 + "."}</td>
+                    <tr className="attendance-row-siswa">
+                        <td className="p-3">{index + 1}</td>
                         <td className="attendance-value">{student.name}</td>
                         <td className="attendance-value">{student.time}</td>
                     </tr>
