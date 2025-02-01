@@ -35,7 +35,6 @@ const InputDataSiswa = () => {
       setShowCamera(true);
     } catch (err) {
       console.error('Error accessing camera:', err);
-      alert('Could not access camera. Please check your permissions.');
     }
   };
 
@@ -130,7 +129,7 @@ const InputDataSiswa = () => {
             <div className="table-container">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-gray-100">
+                  <tr className="bg-gray-100  ">
                     <th className="p-3 text-left">No.</th>
                     <th className="p-3 text-left">Nama</th>
                     <th className="p-3 text-left">NISN</th>
