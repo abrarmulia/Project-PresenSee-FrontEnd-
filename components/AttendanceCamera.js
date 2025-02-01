@@ -44,7 +44,7 @@ function AttendanceCamera() {
       <div className="camera-section">
         <div className="camera-box">
           <h2 className="camera-title">Live Camera</h2>
-          <div className="video-container">
+          <div className="video-container-attendance">
             <video
               ref={videoRef}
               autoPlay
@@ -58,7 +58,7 @@ function AttendanceCamera() {
       {/* Right side - Attendance Records */}
       <div className="attendance-section">
         {/* Teacher Attendance */}
-        <div className="attendance-card">
+        <div className="attendance-card-attendance">
           <h2 className="attendance-title">Rekap Absensi Guru</h2>
           <div className="attendance-list">
             {teacherAttendance.map((teacher, index) => (
@@ -71,7 +71,7 @@ function AttendanceCamera() {
         </div>
 
         {/* Student Attendance */}
-        <div className="attendance-card">
+        <div className="attendance-card-attendance">
           <h2 className="attendance-title">Rekap Absensi Siswa</h2>
           <div className="attendance-list">
             {studentAttendance.map((student, index) => (
